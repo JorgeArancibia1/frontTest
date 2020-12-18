@@ -1,0 +1,12 @@
+.container-description {
+  border: 1px solid blue;
+	// height: 200px;
+	width: 475px;
+}
+
+.img-div {
+  width: $mac-width;
+  height: $mac-height;
+  background-image: url(//home.ripley.cl/brand-logos/apple.svg);
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+.container-image {
+  border: 1px solid red;
+	height: $principal-image-height;
+	width: $principal-image-width;
+	display: flex;
+}
+
+.principal-image {
+  width: 100%;
+}

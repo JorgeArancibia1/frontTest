@@ -244,15 +244,31 @@
 	font-size: $font-size-xxl;
 }
 
+.d-flex {
+	display: flex;
+}
+
 .container-flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.container-flex-center-end {
+.container-center-up {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.container-center-end {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+}
+
+.container-center-start {
+	display: flex;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -270,5 +286,7 @@
 
 .container {
   border: 1px solid red;
-  height: 500px;
+	height: 200px;
+	width: 200px;
+	display: flex;
 }

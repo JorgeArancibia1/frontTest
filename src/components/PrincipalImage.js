@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export const PrincipalImage = () => {
-  return (
-    <div className="container">
-      Esto es principalImage
-    </div>
-  )
-}
+export const PrincipalImage = ({ fullImage="" }) => {
+
+  console.log("Recive", fullImage);
+
+	return (
+		<div className="container-image">
+			<img className="principal-image" src={ fullImage } alt="Cellphone" />
+		</div>
+	);
+};
