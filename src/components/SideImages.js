@@ -18,4 +18,4 @@ export const SideImages = ({images}) => {
 };
 
 
-//Agregar proptypes y default props.
+//Proptypes y default props.
