@@ -3,15 +3,15 @@ import { Description } from './Description'
 import { Dispatch } from './Dispatch'
 import { Warranty } from './Warranty'
 
-export const RightSide = ({ description }) => {
+export const RightSide = ({ description, prices, warranties }) => {
 
   console.log("RS ", description)
 
   return (
-    <div className="container-right d-flex flex-d-c">
-      <Description data={description} />
+    <div className="container-right d-flex flex-d-c px-2">
+      <Description description={description} prices={prices} />
       <Dispatch />
-      <Warranty />
+      <Warranty warranties={warranties} />
     </div>
   )
 }

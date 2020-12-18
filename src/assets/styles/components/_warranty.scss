@@ -1,0 +1,39 @@
+.warranty-container {
+  width: 80%;
+}
+
+.img-warranty {
+  width: $extended-warranty-width;
+  height: $extended-warranty-height;
+}
+
+.aprovecha {
+  font-size: $font-size-xxms;
+}
+
+.input-radio {
+  width: 20px;
+  // border: 1px solid red;
+}
+
+.warranty-principal-text {
+  text-transform: uppercase;
+  font-size: $font-size-xxms;
+}
+
+.precio {
+  color: $purple;
+}
+
+.b-warranty {
+  background-color: $background-warranty;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.fonts {
+  font-size: $font-size-xms;
+}

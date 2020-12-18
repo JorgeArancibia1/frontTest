@@ -1,27 +1,23 @@
 import React from "react";
-import { Prices } from "./Prices";
 import stars from '../assets/images/stars.jpg'
+import { Prices } from "./Prices";
 
-export const Description = ({ data }) => {
+export const Description = ({ description, prices }) => {
 
-  console.log("D ", data);
-  
-  const {name, partNumber, prices} = data;
-  console.log("D Prices ", prices);
+  const {name, partNumber} = description;
   
 	return (
-		<div className="container-description flex-d-c">
+		<div className="container-description flex-d-c mb-2">
 			<div className="img-div" />
-			<h1>{name}</h1>
+			<h1 className="principal-title my-2">{name}</h1>
 			<small>
 				<span className="sku">SKU: {partNumber}</span>
 			</small>
-			<div className="container-center-start">
+			<div className="container-center-start my-1">
 				<img src={stars} alt="stars"/>
-				<span>(2 Calificaciones)</span>
+				<span className="calificaciones">(2 Calificaciones)</span>
 			</div>
-			<p>Iphone prepago Wom</p>
-
+			<p className="mb-3">Iphone prepago Wom</p>
       <Prices prices={prices} />
 		</div>
 	);

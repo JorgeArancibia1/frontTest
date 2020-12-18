@@ -1,7 +1,6 @@
 .container-description {
-  border: 1px solid blue;
 	// height: 200px;
-	width: 475px;
+	// width: 475px;
 }
 
 .img-div {
@@ -11,10 +10,19 @@
   background-repeat: no-repeat;
 }
 
+.principal-title {
+  font-size: $font-size-m;
+  font-weight: 600;
+}
+
 .sku {
   color: $sku;
 }
 
 .stars-container {
-  border: 1px solid red
+  // border: 1px solid red
+}
+
+.calificaciones {
+  font-weight: 500;
 }

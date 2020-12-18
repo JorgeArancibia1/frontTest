@@ -6,7 +6,9 @@ export const useFetch = () => {
 		info: {
 			images: [],
 			fullImage: "",
-			description: {},
+      description: {},
+      prices: {},
+      warranties: {}
 		},
 		loading: true,
 	});
@@ -18,7 +20,9 @@ export const useFetch = () => {
 				info: {
 					images: info.data[0].images,
 					fullImage: info.data[0].fullImage,
-					description: info.data[0],
+          description: info.data[0],
+          prices: info.data[0].prices,
+          warranties: info.data[0].warranties[0].Price[0]
 				},
 				loading: false,
 			});
