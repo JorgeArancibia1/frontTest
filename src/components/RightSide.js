@@ -5,13 +5,11 @@ import { Warranty } from './Warranty'
 
 export const RightSide = ({ description, prices, warranties }) => {
 
-  console.log("RS ", description)
-
   return (
     <div className="container-right d-flex flex-d-c px-2">
-      <Description description={description} prices={prices} />
+      <Description description={ description } prices={ prices } />
       <Dispatch />
-      <Warranty warranties={warranties} />
+      <Warranty warranties={ warranties } />
     </div>
   )
 }

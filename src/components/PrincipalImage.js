@@ -1,8 +1,6 @@
 import React from "react";
 
-export const PrincipalImage = ({ fullImage="" }) => {
-
-  console.log("Recive", fullImage);
+export const PrincipalImage = ({ fullImage = "" }) => {
 
 	return (
 		<div className="container-image px-3">

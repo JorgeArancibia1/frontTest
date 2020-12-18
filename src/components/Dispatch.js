@@ -16,9 +16,9 @@ export const Dispatch = () => {
 					<select
 						name="select"
 						className="color-gray select-dispatch placeholder"
-						defaultValue="algo"
+						defaultValue={'DEFAULT'}
 					>
-						<option value="value1" selected className="placeholder">
+						<option value="DEFAULT" disabled className="placeholder">
 							Selecciona tu Comuna/tienda más cercana
 						</option>
 						<option value="value2">Arica</option>

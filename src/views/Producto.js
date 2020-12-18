@@ -10,11 +10,6 @@ export const Producto = () => {
   
   const { images, fullImage, description, prices, warranties } = info;
 
-  console.log("i",images);
-  console.log("f",fullImage);
-  console.log("d",description);
-  console.log("w",warranties);
-
 	return (
 		<div className="general-container container-center-up">
       {loading&& <div>Loading</div>}

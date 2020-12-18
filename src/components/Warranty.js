@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Warranty = ({ warranties }) => {
-	console.log("warranties => ", warranties);
 
 	return (
 		<div className="flex-d-c b-warranty p-3">
