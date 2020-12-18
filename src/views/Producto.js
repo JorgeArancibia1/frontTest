@@ -5,24 +5,15 @@ import { SideImages } from "../components/SideImages";
 import { useFetch } from "../hooks/useFetch";
 
 export const Producto = () => {
-	let imagesList = "";
-	let fullImage = "";
-	let description = "";
 
   const { info, loading } = useFetch();
   
-  console.log(info);
-
-	if (!loading) {
-    imagesList = info.data[0].images;
-		fullImage = info.data[0].fullImage;
-		description = info.data[0];
-	}
+  const { images, fullImage, description } = info;
 
 	return (
 		<div className="general-container container-center-up">
       {loading&& <div>Loading</div>}
-			{/* <SideImages images={imagesList} /> */}
+			<SideImages images={images} />
 			<PrincipalImage fullImage={fullImage} />
 			<RightSide description={description} />
 		</div>
