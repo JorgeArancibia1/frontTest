@@ -15,14 +15,15 @@ export const useFetch = () => {
 
 	useEffect(() => {
 		const fetch = async () => {
-			const info = await getInfo();
+			const {images,fullImage,description,prices,warranties} = await getInfo();
+
 			setStateInfo({
 				info: {
-					images: info.data[0].images,
-					fullImage: info.data[0].fullImage,
-          description: info.data[0],
-          prices: info.data[0].prices,
-          warranties: info.data[0].warranties[0].Price[0]
+					images: images,
+					fullImage: fullImage,
+          description: description,
+          prices: prices,
+          warranties: warranties
 				},
 				loading: false,
 			});
