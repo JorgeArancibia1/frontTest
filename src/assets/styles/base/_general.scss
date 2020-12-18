@@ -290,3 +290,24 @@
 	width: 200px;
 	display: flex;
 }
+
+.container-between {
+  border: 1px solid red;
+	// height: 200px;
+	// width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.color-red {
+	color: $warning;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.color-gray {
+	color: $gray;
+}

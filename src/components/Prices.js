@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Prices = (prices) => {
+export const Prices = ({ prices }) => {
 	console.log("P ", prices);
 
 	const {
@@ -12,28 +12,33 @@ export const Prices = (prices) => {
 
 	return (
 		<div>
-			<div>
+			<div className="container-between">
 				<span>Normal</span>
 				<span>
-					<strike>{formattedListPrice}</strike>
+					<strike>{ formattedListPrice }</strike>
 				</span>
 			</div>
-			<div>
+			<div className="container-between">
 				<span>Internet</span>
-				<span>{formattedOfferPrice}</span>
+				<span className="color-gray strong">{ formattedOfferPrice }</span>
 			</div>
-			<div>
-				<span>Tarjeta Ripley</span>
-				<span>
-					<img src="" alt="Tarjeta ripley" />
-					{formattedCardPrice}
+			<div className="container-between ">
+				<span className="color-red strong">Tarjeta Ripley</span>
+				<span className="container-flex-center">
+					<img
+						className="ripley-image"
+						src="//static.ripley.cl/images/opex.png"
+						alt="Tarjeta ripley"
+					/>
+					<span className="color-red strong"> { formattedCardPrice } </span>
 				</span>
 			</div>
-			<div>
-				<img src="" alt="Icono de estrella" />
+			<div className="container-between">
 				<span>Con tarjeta Ripley acumulas</span>
-				<span>{ripleyPuntos}</span>
-				<span>RipleyPuntos GO</span>
+				<div>
+					<span className="strong">{ ripleyPuntos }</span>
+					<span>RipleyPuntos GO</span>
+				</div>
 			</div>
 		</div>
 	);
