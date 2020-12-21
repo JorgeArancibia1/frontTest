@@ -5,7 +5,7 @@ const environment = {
 
 export const getInfo = async () => {
 	
-	const HOST = environment.dev;
+	const HOST = environment.prod;
 
 	const url = `${HOST}api/productos`;
 	const response = await fetch(url);
