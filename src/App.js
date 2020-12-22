@@ -1,5 +1,7 @@
 import { Producto } from "./views/Producto";
 import './assets/styles/main.scss';
+require('dotenv').config()
+
 
 function App() {
   return (

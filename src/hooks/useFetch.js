@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getInfo } from "../helpers/getInfo";
+import { getInfo } from "../services/getInfo";
 
 export const useFetch = () => {
 	const [stateInfo, setStateInfo] = useState({
